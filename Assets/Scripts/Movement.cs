@@ -6,7 +6,6 @@ using UnityEngine.AI;
 public class Movement : MonoBehaviour
 {
     [SerializeField]
-    private Camera Camera;
     private RaycastHit hit;
     private NavMeshAgent agent;
     private string groundTag = "Walkable";
@@ -14,24 +13,29 @@ public class Movement : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        if (Camera == null ) {
-            Camera = Camera.main;
-        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            Ray ray = Camera.ScreenPointToRay(Input.mousePosition);
-            if(Physics.Raycast(ray, out hit, Mathf.Infinity)) {
+    }
 
-                    Debug.Log("pocho");
-                if(hit.collider.CompareTag(groundTag)) {
-                    agent.SetDestination(hit.point);
-                }
+    public bool MoveTo(Ray ray)
+    {
+        if (Physics.Raycast(ray, out hit, Mathf.Infinity))
+        {
+            if (hit.collider.CompareTag(groundTag))
+            {
+                return agent.SetDestination(hit.point);
             }
+            else
+            {
+                return false;
+            }
+        }
+        else
+        {
+            return false;
         }
     }
 }
