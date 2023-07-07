@@ -14,7 +14,6 @@ public class Combat : MonoBehaviour
     private NavMeshAgent agent;
     [SerializeField]
     private Camera _camera;
-    
 
 
 
@@ -32,15 +31,16 @@ public class Combat : MonoBehaviour
     private int _turnsCountFromNow = 0;
     private bool _isSpawning = false;
     private Vector3 _spawnPosition;
-    private bool hasAgentReached = false;
     private Vector3 _worldOffset;
 
+    public Vector3 nextPosition;
+    public bool hasAgentReached = false;
 
     /**
      * System objects
      */
     public DisplaySystem displaySystem;
-
+    public VariantSystem variantSystem;
 
     // Start is called before the first frame update
     void Start()
@@ -83,7 +83,9 @@ public class Combat : MonoBehaviour
                 GameObject ghostSpawned = Instantiate(_GhostPrefab, transform.position, Quaternion.identity);
                 ghostSpawned.GetComponent<Ghost>().SetOriginObject(spawned);
                 ghostSpawned.GetComponent<Ghost>().worldOffset = _worldOffset;
+                spawned.GetComponent<Variant>().worldOffset = _worldOffset;
                 displaySystem.AddToCameraList(_spawnCamera);
+                variantSystem.variantList.Add(spawned);
                 _isSpawning = false;
             }
         }

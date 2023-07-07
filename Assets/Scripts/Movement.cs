@@ -5,13 +5,15 @@ using UnityEngine.AI;
 
 public class Movement : MonoBehaviour
 {
-    [SerializeField]
     private RaycastHit hit;
     private NavMeshAgent agent;
     private string groundTag = "Walkable";
+    public Combat _combat;
+
     // Start is called before the first frame update
     void Start()
     {
+        _combat = GameObject.Find("CombatSystem").GetComponent<Combat>();
         agent = GetComponent<NavMeshAgent>();
     }
 
@@ -26,7 +28,15 @@ public class Movement : MonoBehaviour
         {
             if (hit.collider.CompareTag(groundTag))
             {
-                return agent.SetDestination(hit.point);
+                if(agent.SetDestination(hit.point) == true)
+                {
+                    _combat.nextPosition = hit.point;
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
             else
             {

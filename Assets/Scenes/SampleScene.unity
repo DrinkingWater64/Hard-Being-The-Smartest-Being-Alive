@@ -997,6 +997,7 @@ MonoBehaviour:
   agent: {fileID: 869589969}
   _camera: {fileID: 0}
   _SpawnPlayerPrefab: {fileID: 0}
+  _GhostPrefab: {fileID: 0}
   _spawnCamera: {fileID: 0}
   displaySystem: {fileID: 0}
 --- !u!1 &1673174055
@@ -1722,6 +1723,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6589964946277932878, guid: 1d416ceca6b30914884528d5b596db10,
+        type: 3}
+      propertyPath: _ghost
+      value: 
+      objectReference: {fileID: 7635241113244680284, guid: 0b2073b2d128f9f49a3ec99bf7b7d310,
+        type: 3}
     - target: {fileID: 6589964946277932878, guid: 1d416ceca6b30914884528d5b596db10,
         type: 3}
       propertyPath: _world
