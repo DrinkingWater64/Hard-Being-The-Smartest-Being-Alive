@@ -25,12 +25,15 @@ public class Combat : MonoBehaviour
     [SerializeField]
     private GameObject _SpawnPlayerPrefab;
     [SerializeField]
+    private GameObject _GhostPrefab;
+    [SerializeField]
     private Camera _spawnCamera;
     private int _turnsToWaitForSpawn = 2;
     private int _turnsCountFromNow = 0;
     private bool _isSpawning = false;
     private Vector3 _spawnPosition;
     private bool hasAgentReached = false;
+    private Vector3 _worldOffset;
 
 
     /**
@@ -76,7 +79,10 @@ public class Combat : MonoBehaviour
             if (_turnsCountFromNow == _turnsToWaitForSpawn)
             {
                 _spawnCamera.gameObject.SetActive(true);
-                Instantiate(_SpawnPlayerPrefab, new Vector3(_spawnPosition.x,_spawnPosition.y, _spawnPosition.z),Quaternion.identity);
+                GameObject spawned = Instantiate(_SpawnPlayerPrefab, _spawnPosition+_worldOffset,Quaternion.identity);
+                GameObject ghostSpawned = Instantiate(_GhostPrefab, transform.position, Quaternion.identity);
+                ghostSpawned.GetComponent<Ghost>().SetOriginObject(spawned);
+                ghostSpawned.GetComponent<Ghost>().worldOffset = _worldOffset;
                 displaySystem.AddToCameraList(_spawnCamera);
                 _isSpawning = false;
             }
@@ -143,11 +149,13 @@ public class Combat : MonoBehaviour
         }
     }
 
-    public void SpawnOnNextTurn(Vector3 position, GameObject playerPrefab, Camera spawnCam)
+    public void SpawnOnNextTurn(Vector3 position, Vector3 worldOffset, GameObject playerPrefab, GameObject ghostObject,Camera spawnCam)
     {
         _spawnPosition = position;
+        _worldOffset = worldOffset;
         _spawnCamera = spawnCam;
         _SpawnPlayerPrefab = playerPrefab;
+        _GhostPrefab = ghostObject;
         _isSpawning = true;
     }
 }

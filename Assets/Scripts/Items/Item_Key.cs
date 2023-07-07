@@ -11,6 +11,8 @@ public class Item_Key : MonoBehaviour
     [SerializeField]
     private GameObject _player;
     [SerializeField]
+    private GameObject _ghost;
+    [SerializeField]
     private Camera _camera;
 
     public Combat combatSystem;
@@ -44,7 +46,7 @@ public class Item_Key : MonoBehaviour
 
     private void HandlePlayerInteraction()
     {
-        combatSystem.SpawnOnNextTurn(gameObject.transform.position + _world.transform.position, _player, _camera);
+        combatSystem.SpawnOnNextTurn(gameObject.transform.position, _world.transform.position, _player, _ghost, _camera);
         Destroy(gameObject);
         Debug.Log("Player overlapped");
     }
