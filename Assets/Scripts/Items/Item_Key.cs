@@ -5,6 +5,13 @@ using UnityEngine;
 
 public class Item_Key : MonoBehaviour
 {
+    //Reality info
+    [SerializeField]
+    private GameObject _world;
+    [SerializeField]
+    private GameObject _player;
+    [SerializeField]
+    private Camera _camera;
 
     public Combat combatSystem;
 
@@ -37,7 +44,7 @@ public class Item_Key : MonoBehaviour
 
     private void HandlePlayerInteraction()
     {
-        combatSystem.SpawnOnNextTurn(gameObject.transform.position);
+        combatSystem.SpawnOnNextTurn(gameObject.transform.position + _world.transform.position, _player, _camera);
         Destroy(gameObject);
         Debug.Log("Player overlapped");
     }

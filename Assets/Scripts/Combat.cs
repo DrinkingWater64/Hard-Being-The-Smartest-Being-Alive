@@ -15,22 +15,40 @@ public class Combat : MonoBehaviour
     [SerializeField]
     private Camera _camera;
     
+
+
+
+
     /**
      * Spawn prefabs
      */
     [SerializeField]
-    private GameObject _playerPrefab;
+    private GameObject _SpawnPlayerPrefab;
+    [SerializeField]
+    private Camera _spawnCamera;
     private int _turnsToWaitForSpawn = 2;
     private int _turnsCountFromNow = 0;
     private bool _isSpawning = false;
     private Vector3 _spawnPosition;
     private bool hasAgentReached = false;
+
+
+    /**
+     * System objects
+     */
+    public DisplaySystem displaySystem;
+
+
     // Start is called before the first frame update
     void Start()
     {
         if (_camera == null)
         {
             _camera = Camera.main;
+        }
+        if (displaySystem == null)
+        {
+            displaySystem = GameObject.Find("displaySystem").GetComponent<DisplaySystem>();
         }
 
     }
@@ -57,7 +75,9 @@ public class Combat : MonoBehaviour
             }
             if (_turnsCountFromNow == _turnsToWaitForSpawn)
             {
-                Instantiate(_playerPrefab, new Vector3(_spawnPosition.x,_spawnPosition.y, _spawnPosition.z),Quaternion.identity);
+                _spawnCamera.gameObject.SetActive(true);
+                Instantiate(_SpawnPlayerPrefab, new Vector3(_spawnPosition.x,_spawnPosition.y, _spawnPosition.z),Quaternion.identity);
+                displaySystem.AddToCameraList(_spawnCamera);
                 _isSpawning = false;
             }
         }
@@ -123,13 +143,13 @@ public class Combat : MonoBehaviour
         }
     }
 
-    public void SpawnOnNextTurn(Vector3 position)
+    public void SpawnOnNextTurn(Vector3 position, GameObject playerPrefab, Camera spawnCam)
     {
         _spawnPosition = position;
+        _spawnCamera = spawnCam;
+        _SpawnPlayerPrefab = playerPrefab;
         _isSpawning = true;
     }
-
-
 }
 
 public enum GamePhase
