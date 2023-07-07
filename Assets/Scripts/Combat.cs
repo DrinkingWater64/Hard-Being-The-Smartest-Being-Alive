@@ -11,7 +11,7 @@ public class Combat : MonoBehaviour
     [SerializeField]
     private float threshold;
     [SerializeField]
-    private NavMeshAgent agent;
+    public NavMeshAgent agent;
     [SerializeField]
     private Camera _camera;
 

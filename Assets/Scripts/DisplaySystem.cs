@@ -10,10 +10,10 @@ public class DisplaySystem : MonoBehaviour
     [SerializeField]
     private Camera _mainCamera;
 
-    [SerializeField] private Rect _rect = new Rect(0, 0, .5f, .5f);
-    [SerializeField] private Rect rect1 = new Rect(.5f, 0, .5f, .5f);
-    [SerializeField] private Rect rect2 = new Rect(0, .5f, .5f, .5f);
-    [SerializeField] private Rect rect3 = new Rect(.5f, .5f, .5f, .5f);
+    private Rect _rect = new Rect(0, 0, .5f, .5f);
+    private Rect rect1 = new Rect(.5f, 0, .5f, .5f);
+    private Rect rect2 = new Rect(0, .5f, .5f, .5f);
+    private Rect rect3 = new Rect(.5f, .5f, .5f, .5f);
 
 
 
@@ -33,22 +33,31 @@ public class DisplaySystem : MonoBehaviour
         if (cameras.Count == 1)
         {
             SingleCamView();
-        }else if (cameras.Count == 2)
+        }
+        else if (cameras.Count == 2)
         {
             SingleSplitVIew();
-        }else if(cameras.Count == 3)
+        }
+        else if (cameras.Count == 3)
         {
             DoubleSplitViewForThree();
-        }else if(cameras.Count == 4)
+        }
+        else if (cameras.Count == 4)
         {
             DoubleSplitViewForFour();
+        }
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            cameras[1].gameObject.SetActive(false);
+            cameras.Remove(cameras[1]);
         }
 
     }
 
     private void DoubleSplitViewForFour()
     {
-          cameras[0].rect = _rect;
+        cameras[0].rect = _rect;
         cameras[1].rect = rect1;
         cameras[2].rect = rect2;
         cameras[3].rect = rect3;
@@ -71,12 +80,12 @@ public class DisplaySystem : MonoBehaviour
 
     private void SingleCamView()
     {
-        _mainCamera.rect = new Rect(0,0,1,1);
+        _mainCamera.rect = new Rect(0, 0, 1, 1);
     }
-    
+
     public void AddToCameraList(Camera cam)
     {
         cameras.Add(cam);
     }
-    
+
 }

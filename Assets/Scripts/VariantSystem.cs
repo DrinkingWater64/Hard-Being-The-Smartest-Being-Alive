@@ -22,20 +22,13 @@ public class VariantSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
+            Debug.Log(_combatSystem.hasAgentReached);
+
             foreach (GameObject variant in variantList)
             {
-                if (true)
-                {
-                    Debug.Log("in AGENTMOVE");
-                    if (!_combatSystem.hasAgentReached)
-                    {
-                        variant.GetComponent<NavMeshAgent>().SetDestination(_combatSystem.nextPosition + variant.GetComponent<Variant>().worldOffset);
-                    }
-                }
+                    variant.GetComponent<NavMeshAgent>().SetDestination(_combatSystem.nextPosition + variant.GetComponent<Variant>().worldOffset);
+                    //variant.GetComponent<NavMeshAgent>().SetDestination(_combatSystem.agent.transform.position + variant.GetComponent<Variant>().worldOffset);
             }
-        }
     }
 
     //    if (Input.GetMouseButtonDown(0))

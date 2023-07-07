@@ -24,4 +24,12 @@ public class Ghost : MonoBehaviour
         transform.position = originGameObject.transform.position - worldOffset;
         transform.rotation = originGameObject.transform.rotation;
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            Debug.Log("Hitting player");
+        }
+    }
 }
