@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.VFX;
 
 public class Combat : MonoBehaviour
 {
@@ -13,8 +14,16 @@ public class Combat : MonoBehaviour
     private NavMeshAgent agent;
     [SerializeField]
     private Camera _camera;
-
-
+    
+    /**
+     * Spawn prefabs
+     */
+    [SerializeField]
+    private GameObject _playerPrefab;
+    private int _turnsToWaitForSpawn = 2;
+    private int _turnsCountFromNow = 0;
+    private bool _isSpawning = false;
+    private Vector3 _spawnPosition;
     private bool hasAgentReached = false;
     // Start is called before the first frame update
     void Start()
@@ -37,7 +46,21 @@ public class Combat : MonoBehaviour
         {
             HandleAgentMove();
         }
+        //Debug.Log(_turnsCountFromNow);
 
+        //Spawn prefab here
+        if (_isSpawning)
+        {
+            if (_turnsCountFromNow > _turnsToWaitForSpawn)
+            {
+                _turnsCountFromNow = 0;
+            }
+            if (_turnsCountFromNow == _turnsToWaitForSpawn)
+            {
+                Instantiate(_playerPrefab, new Vector3(_spawnPosition.x,_spawnPosition.y, _spawnPosition.z),Quaternion.identity);
+                _isSpawning = false;
+            }
+        }
     }
 
     private bool HasReachedDestination()
@@ -45,11 +68,11 @@ public class Combat : MonoBehaviour
         float remainingDistance = Vector3.Distance(agent.destination, agent.transform.position);
         if (remainingDistance < threshold)
         {
-            Debug.Log("Has Reached");
+            //Debug.Log("Has Reached");
             return true;
         }
 
-        Debug.Log("Has not Reached");
+        //Debug.Log("Has not Reached");
         return false;
     }
 
@@ -57,7 +80,7 @@ public class Combat : MonoBehaviour
     {
         Time.timeScale = .10f;
         MoveAgent();
-        Debug.Log("Handling PLayer turn");
+        //Debug.Log("Handling PLayer turn");
     }
 
     private void HandleAgentMove()
@@ -66,9 +89,10 @@ public class Combat : MonoBehaviour
         hasAgentReached = HasReachedDestination();
         if (hasAgentReached)
         {
+            _turnsCountFromNow++;
             SwitchState();
         }
-        Debug.Log("Handling agent turn");
+        //Debug.Log("Handling agent turn");
     }
 
     private void SwitchState()
@@ -93,9 +117,16 @@ public class Combat : MonoBehaviour
             if (canGo)
             {
                 gamePhase = GamePhase.AGENTMOVE;
+                _turnsCountFromNow++;
                 HandleAgentMove();
             }
         }
+    }
+
+    public void SpawnOnNextTurn(Vector3 position)
+    {
+        _spawnPosition = position;
+        _isSpawning = true;
     }
 
 
