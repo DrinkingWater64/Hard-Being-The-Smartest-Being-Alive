@@ -21,15 +21,18 @@ public class Ghost : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = originGameObject.transform.position - worldOffset;
-        transform.rotation = originGameObject.transform.rotation;
+        if (originGameObject.GetComponent<Variant>().isLinked == true)
+        {
+            transform.position = originGameObject.transform.position - worldOffset;
+            transform.rotation = originGameObject.transform.rotation;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Hitting player");
+            //other.GetComponent<Variant>().TakeDamage(200);
         }
     }
 }

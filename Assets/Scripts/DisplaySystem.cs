@@ -30,6 +30,13 @@ public class DisplaySystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        foreach (Camera c in cameras)
+        {
+            if (c.gameObject.activeSelf == false)
+            {
+                cameras.Remove(c);
+            }
+        }
         if (cameras.Count == 1)
         {
             SingleCamView();
@@ -45,12 +52,6 @@ public class DisplaySystem : MonoBehaviour
         else if (cameras.Count == 4)
         {
             DoubleSplitViewForFour();
-        }
-
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            cameras[1].gameObject.SetActive(false);
-            cameras.Remove(cameras[1]);
         }
 
     }
@@ -86,6 +87,15 @@ public class DisplaySystem : MonoBehaviour
     public void AddToCameraList(Camera cam)
     {
         cameras.Add(cam);
+    }
+
+    public void RemoveFromCameraList(Camera cam) { 
+        cameras.Remove(cam);
+    }
+
+    public bool IsCameraInCameras(Camera cam)
+    {
+        return cameras.Contains(cam);
     }
 
 }
