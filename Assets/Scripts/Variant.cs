@@ -7,6 +7,7 @@ public class Variant : MonoBehaviour
     public Vector3 worldOffset = Vector3.zero;
     public Camera _camera;
     public bool isLinked = true;
+    public float maxHp = 100;
     public float hp = 100;
     public DisplaySystem displaySystem;
 
@@ -43,7 +44,6 @@ public class Variant : MonoBehaviour
     public void HandleDeath()
     {
         //gameObject.SetActive(false);
-        Debug.Log("handling Death");
         isLinked = false;
         if (_camera != null )
         {

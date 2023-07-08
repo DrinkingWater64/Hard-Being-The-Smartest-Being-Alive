@@ -4,28 +4,52 @@ using UnityEngine;
 
 public class Hazard : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField]
+    private float decrementRate;
+
+    [SerializeField]
+    private float intervalRate;
+    private Variant variant = null;
+    private bool isInTrigger = false;
+    private Coroutine decrementCoroutine;
+
+    private void Start()
     {
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
     }
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.GetComponent<Variant>() != null)
+        variant = other.GetComponent<Variant>();
+        if (variant != null && !isInTrigger)
         {
-            other.GetComponent<Variant>().TakeDamage(1);
+            isInTrigger = true;
+            decrementCoroutine = StartCoroutine(DecrementRoutine());
         }
+    }
 
+    private void OnTriggerExit(Collider other)
+    {
+        if (variant != null && other.gameObject == variant.gameObject)
+        {
+            isInTrigger = false;
+            if (decrementCoroutine != null)
+            {
+                StopCoroutine(decrementCoroutine);
+            }
+        }
+    }
+
+    private IEnumerator DecrementRoutine()
+    {
+        while (true)
+        {
+            // Decrement the HP by the decrement rate
+            variant.TakeDamage(decrementRate);
+            Debug.Log("Deducting HP");
+
+            // Wait for 10 seconds
+            yield return new WaitForSeconds(intervalRate);
+        }
     }
 }
