@@ -7,6 +7,7 @@ using UnityEngine.VFX;
 public class Combat : MonoBehaviour
 {
     public GamePhase gamePhase = GamePhase.PLAYERTURN;
+    public GamePhase previousGamephase = GamePhase.PLAYERTURN;
 
     [SerializeField]
     private float threshold;
@@ -61,11 +62,17 @@ public class Combat : MonoBehaviour
     {
         if (gamePhase == GamePhase.PLAYERTURN)
         {
+            previousGamephase = gamePhase;
             HandlePlayerTurn();
         }
         else if (gamePhase == GamePhase.AGENTMOVE)
         {
+            previousGamephase = gamePhase;
             HandleAgentMove();
+        }
+        else if(gamePhase == GamePhase.PAUSEDGAME)
+        {
+            HandlePuasedGame();
         }
         //Debug.Log(_turnsCountFromNow);
 
@@ -160,11 +167,17 @@ public class Combat : MonoBehaviour
         _GhostPrefab = ghostObject;
         _isSpawning = true;
     }
+
+    private void HandlePuasedGame()
+    {
+        Time.timeScale = 0;
+    }
 }
 
 public enum GamePhase
 {
     AGENTMOVE,
-    PLAYERTURN
+    PLAYERTURN,
+    PAUSEDGAME
 }
 
