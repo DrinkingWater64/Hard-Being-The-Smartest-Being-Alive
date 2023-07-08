@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Level1 : MonoBehaviour, ILevel
 {
@@ -11,6 +12,18 @@ public class Level1 : MonoBehaviour, ILevel
     [SerializeField]
     private GameObject bagelPrefab;
 
+    //tutorial
+    [SerializeField]
+    private GameObject clickUI;
+    [SerializeField]
+    private GameObject gotoKeyUI;
+    [SerializeField]
+    private GameObject gotoBagelUI;
+    [SerializeField]
+    private GameObject player;
+
+
+
     private bool isBagelSpawned = false;
 
     // Update is called once per frame
@@ -20,6 +33,7 @@ public class Level1 : MonoBehaviour, ILevel
         {
             SpawnBagle();
         }
+        Tutorial();
     }
 
     public void SpawnBagle()
@@ -40,5 +54,24 @@ public class Level1 : MonoBehaviour, ILevel
     {
         Time.timeScale = 0f;
         canvasObject.SetActive(true);
+    }
+
+    private void Tutorial()
+    {
+        if (clickUI.activeSelf == true) {
+            if (player.GetComponent<NavMeshAgent>().velocity != Vector3.zero) {
+                gotoKeyUI.SetActive(true);
+                clickUI.SetActive(false);
+            }
+        }
+        if (gotoKeyUI.activeSelf == true && clickUI.activeSelf == false)
+        {
+            if (isBagelSpawned == true)
+            {
+                gotoKeyUI.SetActive(false);
+                gotoBagelUI.SetActive(true);
+            }
+        }
+        
     }
 }
