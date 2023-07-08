@@ -17,6 +17,10 @@ public class Item_Key : MonoBehaviour
 
     public Combat combatSystem;
 
+
+
+    public bool keyCollected = false;
+
     private void Awake()
     {
         combatSystem = GameObject.Find("CombatSystem").GetComponent<Combat>();
@@ -39,7 +43,7 @@ public class Item_Key : MonoBehaviour
         Debug.Log("Player overlapped");
         if (other.CompareTag("Player"))
         {
-
+            keyCollected = true;
             HandlePlayerInteraction();
         }
     }
@@ -47,7 +51,7 @@ public class Item_Key : MonoBehaviour
     private void HandlePlayerInteraction()
     {
         combatSystem.SpawnOnNextTurn(gameObject.transform.position, _world.transform.position, _player, _ghost, _camera);
-        Destroy(gameObject);
+        gameObject.SetActive(false);
         Debug.Log("Player overlapped");
     }
 }
