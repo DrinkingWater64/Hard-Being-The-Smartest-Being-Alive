@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Level2 : MonoBehaviour
+public class Level2 : MonoBehaviour, ILevel
 {
     [SerializeField]
     private GameObject _key1;
@@ -16,6 +16,12 @@ public class Level2 : MonoBehaviour
 
     [SerializeField]
     private GameObject gameOverUI;
+
+    [SerializeField]
+    private GameObject variantTutorialUI;
+    private bool isVariantMergeTutorialComplete = false;
+    [SerializeField]
+    private GameObject GamecompleteUI;
 
 
 
@@ -40,12 +46,27 @@ public class Level2 : MonoBehaviour
 
         if (_key1.GetComponent<Item_Key>().keyCollected == true) {
             Debug.Log("Key collected");
+            bagel.SetActive(true);
+            if (isVariantMergeTutorialComplete == false)
+            {
+                variantTutorialUI.SetActive(true);
+                combat.gamePhase = GamePhase.PAUSEDGAME;
+                isVariantMergeTutorialComplete=true;
+            }
         }
+
+        Debug.Log(Time.timeScale);
+    }
+    
+    public void StopVariantTutorial()
+    {
+        variantTutorialUI?.SetActive(false);
+        combat.gamePhase = combat.previousGamephase;
     }
 
-
-    public void HandleGameOver()
+    public void OnLevelComplete()
     {
-
+        GamecompleteUI.SetActive(true);
+        combat.gamePhase=GamePhase.PAUSEDGAME;
     }
 }
