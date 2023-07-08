@@ -28,7 +28,8 @@ public class Combat : MonoBehaviour
     private GameObject _GhostPrefab;
     [SerializeField]
     private Camera _spawnCamera;
-    private int _turnsToWaitForSpawn = 2;
+    [SerializeField]
+    private int _turnsToWaitForSpawn = 3;
     private int _turnsCountFromNow = 0;
     private bool _isSpawning = false;
     private Vector3 _spawnPosition;
@@ -91,6 +92,7 @@ public class Combat : MonoBehaviour
                 ghostSpawned.GetComponent<Ghost>().SetOriginObject(spawned);
                 ghostSpawned.GetComponent<Ghost>().worldOffset = _worldOffset;
                 spawned.GetComponent<Variant>().worldOffset = _worldOffset;
+                spawned.GetComponent<Variant>()._camera = _spawnCamera;
                 displaySystem.AddToCameraList(_spawnCamera);
                 variantSystem.variantList.Add(spawned);
                 _isSpawning = false;

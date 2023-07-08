@@ -1716,6 +1716,11 @@ PrefabInstance:
       propertyPath: variantSystem
       value: 
       objectReference: {fileID: 1088423924581984985}
+    - target: {fileID: 6366432963243458928, guid: fc7ceaa22ab9b0d47be4cd444139c0f2,
+        type: 3}
+      propertyPath: _turnsToWaitForSpawn
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1837,6 +1842,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hazard
       objectReference: {fileID: 0}
+    - target: {fileID: 5596716299371643102, guid: ec5b5d3f0e252824c8bfd345103fa592,
+        type: 3}
+      propertyPath: intervalRate
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5596716299371643102, guid: ec5b5d3f0e252824c8bfd345103fa592,
+        type: 3}
+      propertyPath: decrementRate
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 6881962604649723118, guid: ec5b5d3f0e252824c8bfd345103fa592,
         type: 3}
       propertyPath: m_RootOrder
@@ -1855,7 +1870,7 @@ PrefabInstance:
     - target: {fileID: 6881962604649723118, guid: ec5b5d3f0e252824c8bfd345103fa592,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.7
+      value: -92.3
       objectReference: {fileID: 0}
     - target: {fileID: 6881962604649723118, guid: ec5b5d3f0e252824c8bfd345103fa592,
         type: 3}

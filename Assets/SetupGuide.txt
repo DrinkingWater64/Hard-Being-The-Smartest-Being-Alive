@@ -3,6 +3,7 @@ Install a setup from ground:
 ==> Adding player moving on ground
 1. Add player
 2. Add Core system
+2. In Combat system add Agent, camera, display system, variant system
 3. In display system attatch the necsessary objects
 4. Create a root environmnet add navmesh surface with select hierarchy only. Change the tag to Walkable for every tag.
 5. Add props root Props folder to add foilage and props as well as hazards.
