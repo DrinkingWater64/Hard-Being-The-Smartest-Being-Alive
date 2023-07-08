@@ -52,7 +52,7 @@ public class Level1 : MonoBehaviour, ILevel
 
     public void OnLevelComplete()
     {
-        Time.timeScale = 0f;
+        GameObject.Find("CombatSystem").GetComponent<Combat>().gamePhase = GamePhase.PAUSEDGAME;
         canvasObject.SetActive(true);
     }
 
