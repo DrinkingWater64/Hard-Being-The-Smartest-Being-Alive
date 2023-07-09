@@ -32,7 +32,7 @@ public class Ghost : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            //other.GetComponent<Variant>().TakeDamage(200);
+            other.GetComponent<Variant>().TakeDamage(200);
         }
     }
 }

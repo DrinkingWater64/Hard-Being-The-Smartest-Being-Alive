@@ -88,7 +88,7 @@ public class Combat : MonoBehaviour
             {
                 _spawnCamera.gameObject.SetActive(true);
                 GameObject spawned = Instantiate(_SpawnPlayerPrefab, _spawnPosition+_worldOffset,Quaternion.identity);
-                GameObject ghostSpawned = Instantiate(_GhostPrefab, transform.position, Quaternion.identity);
+                GameObject ghostSpawned = Instantiate(_GhostPrefab, new Vector3(_spawnPosition.x, agent.transform.position.y, _spawnPosition.z), Quaternion.identity);
                 ghostSpawned.GetComponent<Ghost>().SetOriginObject(spawned);
                 ghostSpawned.GetComponent<Ghost>().worldOffset = _worldOffset;
                 spawned.GetComponent<Variant>().worldOffset = _worldOffset;

@@ -24,10 +24,10 @@ public class VariantSystem : MonoBehaviour
     {
         foreach (GameObject variant in variantList)
         {
-            //variant.GetComponent<NavMeshAgent>().SetDestination(_combatSystem.nextPosition + variant.GetComponent<Variant>().worldOffset);
             if (variant.activeSelf == true)
             {
-                variant.GetComponent<NavMeshAgent>().SetDestination(_combatSystem.agent.transform.position + variant.GetComponent<Variant>().worldOffset);
+                //variant.GetComponent<NavMeshAgent>().SetDestination(_combatSystem.agent.transform.position + variant.GetComponent<Variant>().worldOffset);
+            variant.GetComponent<NavMeshAgent>().SetDestination(_combatSystem.nextPosition + variant.GetComponent<Variant>().worldOffset);
             }
             else
             {
