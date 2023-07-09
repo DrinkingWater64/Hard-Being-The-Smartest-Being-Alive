@@ -80,24 +80,24 @@ public class Combat : MonoBehaviour
         //Spawn prefab here
         if (_isSpawning)
         {
-            if (_turnsCountFromNow > _turnsToWaitForSpawn)
-            {
-                _turnsCountFromNow = 0;
-            }
-            if (_turnsCountFromNow == _turnsToWaitForSpawn)
-            {
-                _spawnCamera.gameObject.SetActive(true);
-                GameObject spawned = Instantiate(_SpawnPlayerPrefab, _spawnPosition+_worldOffset,Quaternion.identity);
-                GameObject ghostSpawned = Instantiate(_GhostPrefab, new Vector3(_spawnPosition.x, agent.transform.position.y, _spawnPosition.z), Quaternion.identity);
-                ghostSpawned.GetComponent<Ghost>().SetOriginObject(spawned);
-                ghostSpawned.GetComponent<Ghost>().worldOffset = _worldOffset;
-                spawned.GetComponent<Variant>().worldOffset = _worldOffset;
-                spawned.GetComponent<Variant>()._camera = _spawnCamera;
-                displaySystem.AddToCameraList(_spawnCamera);
-                variantSystem.variantList.Add(spawned);
-                _isSpawning = false;
-            }
+            //SpawnNewAgentAndGhost();
+            StartCoroutine(DelayedCall());
+        _isSpawning = false;
         }
+    }
+
+    private void SpawnNewAgentAndGhost()
+    {
+        _spawnCamera.gameObject.SetActive(true);
+        GameObject spawned = Instantiate(_SpawnPlayerPrefab, _spawnPosition + _worldOffset, Quaternion.identity);
+        GameObject ghostSpawned = Instantiate(_GhostPrefab, new Vector3(_spawnPosition.x, agent.transform.position.y, _spawnPosition.z), Quaternion.identity);
+        ghostSpawned.GetComponent<Ghost>().SetOriginObject(spawned);
+        ghostSpawned.GetComponent<Ghost>().worldOffset = _worldOffset;
+        spawned.GetComponent<Variant>().worldOffset = _worldOffset;
+        spawned.GetComponent<Variant>()._camera = _spawnCamera;
+        displaySystem.AddToCameraList(_spawnCamera);
+        variantSystem.variantList.Add(spawned);
+        _isSpawning = false;
     }
 
     private bool HasReachedDestination()
@@ -173,6 +173,12 @@ public class Combat : MonoBehaviour
     private void HandlePuasedGame()
     {
         Time.timeScale = 0;
+    }
+
+    private IEnumerator DelayedCall()
+    {
+        yield return new WaitForSeconds(1f);
+        SpawnNewAgentAndGhost();
     }
 }
 
