@@ -45,15 +45,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gamePhase: 1
+  previousGamephase: 1
   threshold: 1.5
   agent: {fileID: 0}
   _camera: {fileID: 0}
   _SpawnPlayerPrefab: {fileID: 0}
   _GhostPrefab: {fileID: 0}
   _spawnCamera: {fileID: 0}
+  _turnsToWaitForSpawn: 3
   nextPosition: {x: 0, y: 0, z: 0}
   hasAgentReached: 0
-  displaySystem: {fileID: 0}
+  displaySystem: {fileID: 3296613723268935259}
   variantSystem: {fileID: 6412521596419711139}
 --- !u!1 &2379636304883353287
 GameObject:
@@ -133,7 +135,7 @@ Transform:
   - {fileID: 1222675420015265160}
   - {fileID: 1702849315054615565}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5725475605061123574
 GameObject:
