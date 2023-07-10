@@ -182,7 +182,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: 'When you get the key, a ripple in reality tries to merge two universe
-    into one. Two variants of you in different universe gains the same consciousness
+    into one. Two variants of you in different universe gain the same consciousness
     and make the same decison. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -698,9 +698,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Suddenly a portal opens up and you see another you.. ANother you? Before
-    portal closes, he let you know that.. All the you in different universe are in
-    Hunt of the BAGEL. This causing ripple in reality. Destrying other you.
+  m_text: Suddenly a portal opens up and you see another you.. ANOTHER you? Before
+    portal closes, he lets you know that.. All the you in different universe are
+    in Hunt of the BAGEL. This causing ripple in reality. Destroying other you.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2191,8 +2191,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: So you launch into the BAGEL space. And go over the rules of BAGEL space
-    one more time.
+  m_text: So you launch yourself into the BAGEL space. And go over the rules of BAGEL
+    space one more time.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2772,7 +2772,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: Even though you two will have the same consciousness, you most probably
-    won't have the same environments.
+    won't have the same environment.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2985,7 +2985,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Hohever if one of you die. The reality will become normal. But you still
     cannot be at the same position as the you was. Don't worry, your BT-01 will help
-    visualize other you with a hologram.
+    visualize other you with a hologram. Good luck in the BAGEL space? what is even
+    BAGEL space?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3420,7 +3421,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: So you prepare for the journey, makes your special capsule, the only thing
+  m_text: So you prepare for the journey, make your special capsule, the only thing
     that can work in BAGEL space, the BT-01 (Bagel traversal 01)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
