@@ -3,11 +3,11 @@
  Team members: 1.Abdullah Al Muti 2.Samin Yasar Islam
  Game engine: Unity
  Platform: Windows
- Project Github link:
+ Project Github link: https://github.com/DrinkingWater64/Hard-Being-The-Smartest-Being-Alive
  
  Installation Instruction:
  Download the zip file, unpack, find the exe file, and play.
- You can also clone the repository and and Build the game for any platform. Use Unity 2022 lts version.
+ You can also clone the repository and Build the game for any platform. Use Unity 2022 lts version.
 
  About the game: You are the smartest being in the universe. In the sense of a multiverse who is the smartest being everywhere? The one who reaches the BAGEL will have all. It all started with a BAGEL
 
