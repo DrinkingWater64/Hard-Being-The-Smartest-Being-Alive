@@ -219,6 +219,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 148951308}
+        m_TargetAssemblyTypeName: ButtonSFX, Assembly-CSharp
+        m_MethodName: PlayClip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &140180599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -325,6 +337,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &148951308 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7620179969841212777, guid: 7dc35181b9b721c4eb41b31760946c45,
+    type: 3}
+  m_PrefabInstance: {fileID: 622685888}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84cfb5b481a6de44db1805ee035ebbe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &177941013
 GameObject:
   m_ObjectHideFlags: 0
@@ -419,6 +443,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Level1
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1810576298}
+        m_TargetAssemblyTypeName: ButtonSFX, Assembly-CSharp
+        m_MethodName: PlayClip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &177941016
@@ -594,6 +630,79 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 220188188}
   m_CullTransparentMesh: 1
+--- !u!1001 &622685888
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2968039161223356453, guid: 7dc35181b9b721c4eb41b31760946c45,
+        type: 3}
+      propertyPath: m_Name
+      value: ButtonSFXFAB
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330855805195597305, guid: 7dc35181b9b721c4eb41b31760946c45,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330855805195597305, guid: 7dc35181b9b721c4eb41b31760946c45,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -400.00006
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330855805195597305, guid: 7dc35181b9b721c4eb41b31760946c45,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -224.14581
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330855805195597305, guid: 7dc35181b9b721c4eb41b31760946c45,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330855805195597305, guid: 7dc35181b9b721c4eb41b31760946c45,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330855805195597305, guid: 7dc35181b9b721c4eb41b31760946c45,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330855805195597305, guid: 7dc35181b9b721c4eb41b31760946c45,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330855805195597305, guid: 7dc35181b9b721c4eb41b31760946c45,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330855805195597305, guid: 7dc35181b9b721c4eb41b31760946c45,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330855805195597305, guid: 7dc35181b9b721c4eb41b31760946c45,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330855805195597305, guid: 7dc35181b9b721c4eb41b31760946c45,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7dc35181b9b721c4eb41b31760946c45, type: 3}
 --- !u!1 &707696160
 GameObject:
   m_ObjectHideFlags: 0
@@ -1095,6 +1204,18 @@ MonoBehaviour:
           m_StringArgument: level3
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1810576298}
+        m_TargetAssemblyTypeName: ButtonSFX, Assembly-CSharp
+        m_MethodName: PlayClip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1302573480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1133,6 +1254,84 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1302573477}
   m_CullTransparentMesh: 1
+--- !u!1001 &1340210323
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2968039161223356453, guid: 7dc35181b9b721c4eb41b31760946c45,
+        type: 3}
+      propertyPath: m_Name
+      value: ButtonSFXFAB (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330855805195597305, guid: 7dc35181b9b721c4eb41b31760946c45,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330855805195597305, guid: 7dc35181b9b721c4eb41b31760946c45,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -400.00006
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330855805195597305, guid: 7dc35181b9b721c4eb41b31760946c45,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -224.14581
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330855805195597305, guid: 7dc35181b9b721c4eb41b31760946c45,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330855805195597305, guid: 7dc35181b9b721c4eb41b31760946c45,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330855805195597305, guid: 7dc35181b9b721c4eb41b31760946c45,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330855805195597305, guid: 7dc35181b9b721c4eb41b31760946c45,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330855805195597305, guid: 7dc35181b9b721c4eb41b31760946c45,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330855805195597305, guid: 7dc35181b9b721c4eb41b31760946c45,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330855805195597305, guid: 7dc35181b9b721c4eb41b31760946c45,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330855805195597305, guid: 7dc35181b9b721c4eb41b31760946c45,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7620179969841212777, guid: 7dc35181b9b721c4eb41b31760946c45,
+        type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: e50038f59404f7c4a8200b6b2a467ca7, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7dc35181b9b721c4eb41b31760946c45, type: 3}
 --- !u!1 &1691404176
 GameObject:
   m_ObjectHideFlags: 0
@@ -1499,6 +1698,18 @@ MonoBehaviour:
           m_StringArgument: Level2
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1810576298}
+        m_TargetAssemblyTypeName: ButtonSFX, Assembly-CSharp
+        m_MethodName: PlayClip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1746242755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1537,6 +1748,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1746242752}
   m_CullTransparentMesh: 1
+--- !u!114 &1810576298 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7620179969841212777, guid: 7dc35181b9b721c4eb41b31760946c45,
+    type: 3}
+  m_PrefabInstance: {fileID: 1340210323}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84cfb5b481a6de44db1805ee035ebbe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1977054099
 GameObject:
   m_ObjectHideFlags: 0
@@ -1672,6 +1895,79 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1977054099}
   m_CullTransparentMesh: 1
+--- !u!1001 &1996980599
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3669967716410252782, guid: 066e5f60ee81e2145a0686d400dcd334,
+        type: 3}
+      propertyPath: m_Name
+      value: SoundSrc
+      objectReference: {fileID: 0}
+    - target: {fileID: 8085927875923224429, guid: 066e5f60ee81e2145a0686d400dcd334,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8085927875923224429, guid: 066e5f60ee81e2145a0686d400dcd334,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8085927875923224429, guid: 066e5f60ee81e2145a0686d400dcd334,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8085927875923224429, guid: 066e5f60ee81e2145a0686d400dcd334,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8085927875923224429, guid: 066e5f60ee81e2145a0686d400dcd334,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8085927875923224429, guid: 066e5f60ee81e2145a0686d400dcd334,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8085927875923224429, guid: 066e5f60ee81e2145a0686d400dcd334,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8085927875923224429, guid: 066e5f60ee81e2145a0686d400dcd334,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8085927875923224429, guid: 066e5f60ee81e2145a0686d400dcd334,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8085927875923224429, guid: 066e5f60ee81e2145a0686d400dcd334,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8085927875923224429, guid: 066e5f60ee81e2145a0686d400dcd334,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 066e5f60ee81e2145a0686d400dcd334, type: 3}
 --- !u!1 &2003343670
 GameObject:
   m_ObjectHideFlags: 0
@@ -1901,6 +2197,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Level0
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1810576298}
+        m_TargetAssemblyTypeName: ButtonSFX, Assembly-CSharp
+        m_MethodName: PlayClip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!222 &3761179007297928350
