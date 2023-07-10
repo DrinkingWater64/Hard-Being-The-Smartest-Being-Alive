@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Level2 : MonoBehaviour, ILevel
+public class Level4 : MonoBehaviour, ILevel
 {
+
     [SerializeField]
     private GameObject _key1;
-    [SerializeField] private GameObject keySound;
     [SerializeField]
     private GameObject bagel;
     [SerializeField]
@@ -15,17 +15,21 @@ public class Level2 : MonoBehaviour, ILevel
     private Combat combat;
     private bool isGameOver = false;
 
-    [SerializeField]
-    private GameObject gameOverUI;
+
+
 
     [SerializeField]
-    private GameObject variantTutorialUI;
-    private bool isVariantMergeTutorialComplete = false;
+    private GameObject gameOverUI;
     [SerializeField]
     private GameObject GamecompleteUI;
 
 
+    public void OnLevelComplete()
+    {
+        GamecompleteUI.SetActive(true);
+        combat.gamePhase = GamePhase.PAUSEDGAME;
 
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -45,30 +49,10 @@ public class Level2 : MonoBehaviour, ILevel
 
         }
 
-        if (_key1.GetComponent<Item_Key>().keyCollected == true) {
+        if (_key1.GetComponent<Item_Key>().keyCollected == true)
+        {
             Debug.Log("Key collected");
             bagel.SetActive(true);
-            if (isVariantMergeTutorialComplete == false)
-            {
-                variantTutorialUI.SetActive(true);
-                combat.gamePhase = GamePhase.PAUSEDGAME;
-                isVariantMergeTutorialComplete=true;
-            }
         }
-
-        Debug.Log(Time.timeScale);
-    }
-    
-    public void StopVariantTutorial()
-    {
-        variantTutorialUI?.SetActive(false);
-        combat.gamePhase = combat.previousGamephase;
-    }
-
-    public void OnLevelComplete()
-    {
-        player.SetActive(false);
-        GamecompleteUI.SetActive(true);
-        combat.gamePhase=GamePhase.PAUSEDGAME;
     }
 }

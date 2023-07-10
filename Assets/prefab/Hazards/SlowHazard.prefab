@@ -14,8 +14,9 @@ GameObject:
   - component: {fileID: 2321934185397596355}
   - component: {fileID: 5596716299371643102}
   - component: {fileID: 6731336337040430007}
+  - component: {fileID: 3687196438648323449}
   m_Layer: 0
-  m_Name: Hazard
+  m_Name: SlowHazard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -64,7 +65,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: f4e83cc6f834e0a4ab81cb99426e8db0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -217,3 +218,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3687196438648323449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4054827238889146660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f9b9b389acdae448accb198034c222d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  decrementRate: 0
+  intervalRate: 0

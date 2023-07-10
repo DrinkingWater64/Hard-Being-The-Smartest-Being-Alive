@@ -13,6 +13,12 @@ public class PauseMenuUI : MonoBehaviour
     private Combat combat;
     private float timescale;
 
+
+    [SerializeField]
+    private AudioSource buttonFX;
+    [SerializeField]
+    
+
     private void Start()
     {
         combat = GameObject.Find("CombatSystem").GetComponent<Combat>();
@@ -31,6 +37,7 @@ public class PauseMenuUI : MonoBehaviour
         }
     }
 
+    // play the clip in audio source. Once the clip is played completely the resume game
     public void ResumeGame()
     {
         if (panel.activeSelf == true)
@@ -40,7 +47,7 @@ public class PauseMenuUI : MonoBehaviour
         }
     }
 
-    //Duplicate code, Refactor later
+    // play the clip in audio source. Once the clip is played completely then go to Menu
     public void GotoMainMenu()
     {
         SceneManager.LoadScene("Menu");

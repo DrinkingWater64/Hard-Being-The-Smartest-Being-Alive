@@ -6,6 +6,10 @@ using UnityEngine.SceneManagement;
 public class MainMenuScene : MonoBehaviour
 {
 
+    private void Start()
+    {
+        Time.timeScale = 1.0f;
+    }
     public void GoToPlay()
     {
         StartCoroutine(LoadSceneAfterDelay("Play", 1f));

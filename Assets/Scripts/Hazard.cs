@@ -18,6 +18,15 @@ public class Hazard : MonoBehaviour
 
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        var sound = gameObject.GetComponent<AudioSource>();
+        if (sound != null)
+        {
+            sound.Play();
+        }
+    }
+
     private void OnTriggerStay(Collider other)
     {
         variant = other.GetComponent<Variant>();

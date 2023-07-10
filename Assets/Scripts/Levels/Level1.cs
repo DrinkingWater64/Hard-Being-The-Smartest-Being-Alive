@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class Level1 : MonoBehaviour, ILevel
 {
@@ -24,13 +25,19 @@ public class Level1 : MonoBehaviour, ILevel
 
 
 
+    //Sound
+    public ButtonSFX keysSFX;
+
+
+
     private bool isBagelSpawned = false;
 
     // Update is called once per frame
     void Update()
     {
-        if (item_Key_Harmless != null && item_Key_Harmless.keygot == true)
+        if (item_Key_Harmless != null && item_Key_Harmless.keygot == true && isBagelSpawned != true)
         {
+            keysSFX.PlayClip();
             SpawnBagle();
         }
         Tutorial();
@@ -52,8 +59,11 @@ public class Level1 : MonoBehaviour, ILevel
 
     public void OnLevelComplete()
     {
+
+
         GameObject.Find("CombatSystem").GetComponent<Combat>().gamePhase = GamePhase.PAUSEDGAME;
         canvasObject.SetActive(true);
+        player.SetActive(false);
     }
 
     private void Tutorial()
