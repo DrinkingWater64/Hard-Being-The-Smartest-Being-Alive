@@ -6,7 +6,7 @@ public class SceneLoader : MonoBehaviour
 {
     public void LoadScene(string sceneName)
     {
-        StartCoroutine(LoadSceneAfterDelay(sceneName, 1.5f));
+        StartCoroutine(LoadSceneAfterDelay(sceneName, .8f));
     }
 
     private IEnumerator LoadSceneAfterDelay(string sceneName, float delay)

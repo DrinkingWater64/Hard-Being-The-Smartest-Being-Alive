@@ -158,7 +158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 194, y: -4.7294}
+  m_AnchoredPosition: {x: 119, y: 15}
   m_SizeDelta: {x: 451.421, y: 446.4204}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5381170
@@ -181,12 +181,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'When you get the key, a ripple in reality tries to merge two universe
-    into one. Two variants of you in different universe gain the same consciousness
-    and make the same decison. '
+  m_text: But beware, your universe is now fragile and the other you has been alerted
+    of your existence, and is tracking your every move. Get the bagel without touching
+    them or risk losing everything.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e7f490765556ef942a5b3c87f741c563, type: 2}
+  m_sharedMaterial: {fileID: 6784378216253123918, guid: e7f490765556ef942a5b3c87f741c563,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -408,11 +409,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You are officially the Smartest being in Universe. There is nothing in
-    this universe that you don't have. But in this universe....
+  m_text: "You are the smartest person in the universe, for the time being\u2026"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e7f490765556ef942a5b3c87f741c563, type: 2}
+  m_sharedMaterial: {fileID: 6784378216253123918, guid: e7f490765556ef942a5b3c87f741c563,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -675,7 +676,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 206.612, y: -4.7293}
+  m_AnchoredPosition: {x: 206.612, y: -27}
   m_SizeDelta: {x: 451.421, y: 446.4204}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &248475051
@@ -698,12 +699,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Suddenly a portal opens up and you see another you.. ANOTHER you? Before
-    portal closes, he lets you know that.. All the you in different universe are
-    in Hunt of the BAGEL. This causing ripple in reality. Destroying other you.
+  m_text: "A portal opens before you and you see\u2026 an entity looking exactly
+    like you staring back. It tells you the bagelverse is in chao after the hunt
+    began, with one universe consuming another."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e7f490765556ef942a5b3c87f741c563, type: 2}
+  m_sharedMaterial: {fileID: 6784378216253123918, guid: e7f490765556ef942a5b3c87f741c563,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1525,7 +1527,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 194, y: -4.7294}
+  m_AnchoredPosition: {x: 194, y: -23}
   m_SizeDelta: {x: 451.421, y: 446.4204}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &669114275
@@ -1548,10 +1550,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You need to find keys for the BAGEL of that BAGEL space.
+  m_text: "Get the key to open a temporary window to the other universe\u2019s bagel."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e7f490765556ef942a5b3c87f741c563, type: 2}
+  m_sharedMaterial: {fileID: 6784378216253123918, guid: e7f490765556ef942a5b3c87f741c563,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1614,7 +1617,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &669114276
@@ -1816,7 +1819,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 194, y: -4.7294}
+  m_AnchoredPosition: {x: 194, y: -13}
   m_SizeDelta: {x: 451.421, y: 446.4204}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &799807741
@@ -1839,12 +1842,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ONE DECISION AT A TIME!!! Time and Space in convoluted in BAGEL space.
-    You can take a decision to move to a point but cannot change it or make another
-    decision until you reach your destination.
+  m_text: "One wrong move and the begelverse\u2019s convoluted rules of physics will
+    punish you heavily. Decisions are final in the bagelverse, choosing to move to
+    a point cannot be changed until you reach your destination"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e7f490765556ef942a5b3c87f741c563, type: 2}
+  m_sharedMaterial: {fileID: 6784378216253123918, guid: e7f490765556ef942a5b3c87f741c563,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1980,8 +1984,9 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 86e09ac63d986e14c85a0b09b5be590c, type: 2}
+  m_sharedMaterial: {fileID: -2850144485938248802, guid: 86e09ac63d986e14c85a0b09b5be590c,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2191,11 +2196,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: So you launch yourself into the BAGEL space. And go over the rules of BAGEL
-    space one more time.
+  m_text: "You launch yourself into the bagelverse. And tackle the rules of this
+    cheesy world you\u2019ve been thrust into."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e7f490765556ef942a5b3c87f741c563, type: 2}
+  m_sharedMaterial: {fileID: 6784378216253123918, guid: e7f490765556ef942a5b3c87f741c563,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2536,7 +2542,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 194, y: -4.7294}
+  m_AnchoredPosition: {x: 194, y: -38}
   m_SizeDelta: {x: 451.421, y: 446.4204}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1015066103
@@ -2559,11 +2565,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: If two variants are at the same place at the same time, reality will merge
-    and both of you will die.
+  m_text: If the two of you touch, your realities will be toasted and both of you
+    will die.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e7f490765556ef942a5b3c87f741c563, type: 2}
+  m_sharedMaterial: {fileID: 6784378216253123918, guid: e7f490765556ef942a5b3c87f741c563,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2748,7 +2755,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 194, y: -4.7294}
+  m_AnchoredPosition: {x: 194, y: -36}
   m_SizeDelta: {x: 451.421, y: 446.4204}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1317411487
@@ -2771,11 +2778,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Even though you two will have the same consciousness, you most probably
-    won't have the same environment.
+  m_text: The other you may be following your footsteps, but all universes are slightly
+    different. Use that to your advantage and best the other you.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e7f490765556ef942a5b3c87f741c563, type: 2}
+  m_sharedMaterial: {fileID: 6784378216253123918, guid: e7f490765556ef942a5b3c87f741c563,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2838,7 +2846,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1317411488
@@ -2960,7 +2968,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 194, y: -4.7294}
+  m_AnchoredPosition: {x: 194, y: -78}
   m_SizeDelta: {x: 451.421, y: 446.4204}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1501820199
@@ -2983,13 +2991,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hohever if one of you die. The reality will become normal. But you still
-    cannot be at the same position as the you was. Don't worry, your BT-01 will help
-    visualize other you with a hologram. Good luck in the BAGEL space? what is even
-    BAGEL space?
+  m_text: "If the other you dies, you can capture their bagel and move on to the
+    next. Use your BT-01 to keep track of other you\u2019s hologram"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e7f490765556ef942a5b3c87f741c563, type: 2}
+  m_sharedMaterial: {fileID: 6784378216253123918, guid: e7f490765556ef942a5b3c87f741c563,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3421,11 +3428,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: So you prepare for the journey, make your special capsule, the only thing
-    that can work in BAGEL space, the BT-01 (Bagel traversal 01)
+  m_text: But you will be against...you! Smartest beings in the bagelverse. You prepare
+    for the journey by making the only thing that can work in bagel space, the BT-01
+    (Bagel traversal 01)
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e7f490765556ef942a5b3c87f741c563, type: 2}
+  m_sharedMaterial: {fileID: 6784378216253123918, guid: e7f490765556ef942a5b3c87f741c563,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3856,7 +3865,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 194, y: -4.7294}
+  m_AnchoredPosition: {x: 176, y: -6}
   m_SizeDelta: {x: 451.421, y: 446.4204}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2045218789
@@ -3879,12 +3888,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You realize you have to move fast to get the BAGEL. Or you will be killed
-    in merging of reality. But you will be against...you! Smartest beings in the
-    multiverse.
+  m_text: You realize you have to move fast to get the last of the bagels before
+    your universe is annihilated.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e7f490765556ef942a5b3c87f741c563, type: 2}
+  m_sharedMaterial: {fileID: 6784378216253123918, guid: e7f490765556ef942a5b3c87f741c563,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

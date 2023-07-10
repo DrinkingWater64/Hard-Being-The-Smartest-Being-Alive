@@ -519,7 +519,7 @@ MonoBehaviour:
     hazards around you... I mean the you in other universe. The other you will start
     merging with you after a very short time.. SO dont just stand and waste time!!!!!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 86e09ac63d986e14c85a0b09b5be590c, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -583,7 +583,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &59209980
@@ -5369,7 +5369,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Ok
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 86e09ac63d986e14c85a0b09b5be590c, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -5433,7 +5433,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &577035116
@@ -8293,11 +8293,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseGameUI
       objectReference: {fileID: 0}
+    - target: {fileID: 2821002637218540756, guid: a383e8682b93dd54782d81fd0059e770,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5058909163656357692, guid: a383e8682b93dd54782d81fd0059e770,
         type: 3}
       propertyPath: combat
       value: 
       objectReference: {fileID: 621421576}
+    - target: {fileID: 6577797269729712407, guid: a383e8682b93dd54782d81fd0059e770,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12740,8 +12750,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: This is your health bar. Try not to die.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 86e09ac63d986e14c85a0b09b5be590c, type: 2}
+  m_sharedMaterial: {fileID: -2850144485938248802, guid: 86e09ac63d986e14c85a0b09b5be590c,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -18581,6 +18592,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 887804067457413845, guid: 1cd53f85dccaaa94f8ff13a5ce840dc1,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3786550628620048075, guid: 1cd53f85dccaaa94f8ff13a5ce840dc1,
         type: 3}
       propertyPath: m_Pivot.x
@@ -18690,6 +18706,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GameOverUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 6560173343267014704, guid: 1cd53f85dccaaa94f8ff13a5ce840dc1,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7456316977830935948, guid: 1cd53f85dccaaa94f8ff13a5ce840dc1,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

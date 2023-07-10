@@ -12,17 +12,17 @@ public class MainMenuScene : MonoBehaviour
     }
     public void GoToPlay()
     {
-        StartCoroutine(LoadSceneAfterDelay("Play", 1f));
+        StartCoroutine(LoadSceneAfterDelay("Play", .1f));
     }
 
     public void GoToAbout()
     {
-        StartCoroutine(LoadSceneAfterDelay("About", 1f));
+        StartCoroutine(LoadSceneAfterDelay("About", .1f));
     }
 
     public void ExitApp()
     {
-        StartCoroutine(QuitAfterDelay(1f));
+        StartCoroutine(QuitAfterDelay(.1f));
     }
 
     private IEnumerator LoadSceneAfterDelay(string sceneName, float delay)

@@ -6,7 +6,7 @@ public class GameScene : MonoBehaviour
 {
     public void GoBackToMenu()
     {
-        StartCoroutine(LoadSceneAfterDelay("Menu", 1.5f));
+        StartCoroutine(LoadSceneAfterDelay("Menu", .1f));
     }
 
     private IEnumerator LoadSceneAfterDelay(string sceneName, float delay)
