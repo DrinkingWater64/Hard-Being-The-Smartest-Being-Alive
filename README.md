@@ -1,9 +1,17 @@
 # Game Hard-Being-The-Smartest-Being-Alive
+ 
  Team: Ruchi-Raze
+ 
  Team members: 1.Abdullah Al Muti 2.Samin Yasar Islam
+ 
  Game engine: Unity
+ 
  Platform: Windows
+ 
  Project Github link: https://github.com/DrinkingWater64/Hard-Being-The-Smartest-Being-Alive
+
+![image](https://github.com/user-attachments/assets/8f718f57-3a17-43b1-b316-a8e076b18467)
+
  
  Installation Instruction:
  Download the zip file, unpack, find the exe file, and play.
